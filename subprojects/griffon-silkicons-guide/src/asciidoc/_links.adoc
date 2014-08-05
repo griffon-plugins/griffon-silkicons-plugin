@@ -1,0 +1,4 @@
+
+:link_silkicons: http://www.famfamfam.com/lab/icons/silk/[Mark James' Silk Icons, window="_blank"]
+:api_link_silkicon_javafx: link:api/griffon/javafx/support/silkicons/SilkIcon.html[griffon.javafx.support.silkicons.SilkIcon, window="_blank"]
+:api_link_silkicon_swing: link:api/griffon/swing/support/silkicons/SilkIcon.html[griffon.swing.support.silkicons.SilkIcon, window="_blank"]

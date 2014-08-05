@@ -1,0 +1,17 @@
+= griffon-silkicons-plugin
+:version: 1.0.0.SNAPSHOT
+:linkattrs:
+
+image:https://travis-ci.org/griffon-plugins/griffon-silkicons-plugin.png?branch=master["Build Status", link="https://travis-ci.org/griffon-plugins/griffon-silkicons-plugin"]
+image:https://coveralls.io/repos/griffon-plugins/griffon-silkicons-plugin/badge.png["Coverage Status", link="https://coveralls.io/r/griffon-plugins/griffon-silkicons-plugin"]
+image:http://img.shields.io/:semver-{version}-red.svg["Semantic Versioning", link="http://semver.org"]
+
+---
+
+Provides a shortcut for adding icons based on
+http://www.famfamfam.com/lab/icons/silk/[Mark James' Silk Icons, window="_blank"].
+
+Refer to the link:http://griffon-plugins.github.io/griffon-silkicons-plugin/[plugin guide, window="_blank"] for
+further information on configuration and usage.
+
+
