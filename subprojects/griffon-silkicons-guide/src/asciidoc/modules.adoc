@@ -13,9 +13,9 @@ binding if the wrong type has been applied by the Griffon runtime.
 
 == JavaFX
 
-Module name: +silkicons-javafx-groovy+
+Module name: `silkicons-javafx-groovy`
 
-Depends on: +javafx-groovy+
+Depends on: `javafx-groovy`
 
 [source,java,options="nowrap"]
 ----
@@ -27,14 +27,14 @@ The following nodes will become available on a Groovy View
 [options="2*,header"]
 |===
 | Node     | Type
-| silkIcon | +{api_link_silkicon_javafx}+
+| silkIcon | `{api_link_silkicon_javafx}`
 |===
 
 == Swing
 
-Module name: +silkicons-swing-groovy+
+Module name: `silkicons-swing-groovy`
 
-Depends on: +swing-groovy+
+Depends on: `swing-groovy`
 
 [source,java,options="nowrap"]
 ----
@@ -46,10 +46,10 @@ The following nodes will become available on a Groovy View
 [options="2*,header"]
 |===
 | Node     | Type
-| silkIcon | +{api_link_silkicon_swing}+
+| silkIcon | `{api_link_silkicon_swing}`
 |===
 
 Both `silkIcon` Nodes support the following properties
 
-icon:: The name of the icon, such as +tux+ or +add+.
+icon:: The name of the icon, such as `tux` or `add`.
 
