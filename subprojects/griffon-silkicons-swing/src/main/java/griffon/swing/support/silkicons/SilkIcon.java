@@ -19,15 +19,22 @@ import griffon.plugins.silkicons.Silk;
 
 import javax.annotation.Nonnull;
 import javax.swing.ImageIcon;
+import java.awt.Toolkit;
 import java.net.URL;
 
+import static griffon.util.GriffonNameUtils.requireNonBlank;
 import static java.util.Objects.requireNonNull;
 
 /**
  * @author Andres Almiray
  */
 public class SilkIcon extends ImageIcon {
-    private final Silk silk;
+    private static final String ERROR_SILK_NULL = "Argument 'silk' must not be null";
+    private Silk silk;
+
+    public SilkIcon() {
+        this(Silk.STAR);
+    }
 
     public SilkIcon(@Nonnull Silk silk) {
         super(toURL(silk));
@@ -40,7 +47,7 @@ public class SilkIcon extends ImageIcon {
 
     @Nonnull
     private static URL toURL(@Nonnull Silk silk) {
-        requireNonNull(silk, "Argument 'silk' must not be null.");
+        requireNonNull(silk, ERROR_SILK_NULL);
         String resource = silk.asResource();
         return Thread.currentThread().getContextClassLoader().getResource(resource);
     }
@@ -48,5 +55,15 @@ public class SilkIcon extends ImageIcon {
     @Nonnull
     public Silk getSilk() {
         return silk;
+    }
+
+    public void setSilk(@Nonnull Silk silk) {
+        this.silk = requireNonNull(silk, ERROR_SILK_NULL);
+        setImage(Toolkit.getDefaultToolkit().getImage(toURL(silk)));
+    }
+
+    public void setSilk(@Nonnull String description) {
+        requireNonBlank(description, "Argument 'description' must not be blank");
+        setSilk(Silk.findByDescription(description));
     }
 }
