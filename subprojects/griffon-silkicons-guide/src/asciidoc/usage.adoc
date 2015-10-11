@@ -9,9 +9,9 @@ You may use this class with any Swing component that supports an Icon property.
 
 == JavaFX
 
-The `griffon-silk-javafx:{project-version}` JAR provides a new Node class: `{api_link_silkicon_javafx}`.
-You may use this class with any JavaFX control that accepts a graphic property. You may also use the icon directly as
-it is a subclass of `javafx.scene.control.Label`.
+The `griffon-silk-javafx:{project-version}` JAR provides a subclass of `Image`: `{api_link_silkicon_javafx}`.
+You may use this class with any JavaFX control that accepts a graphic property, as long as you wrap the icon with
+an `ImageView` instance.
 
 == Action Resources
 
