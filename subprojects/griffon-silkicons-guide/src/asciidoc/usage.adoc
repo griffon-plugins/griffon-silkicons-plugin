@@ -27,7 +27,7 @@ Here's an example using the Swing icon
 [source,java,options="nowrap"]
 .griffon-app/i18n/messages.properties
 ----
-org.example.AppController.action.Preferences.icon=griffon.swing.support.silk.SilkIcon|star
+org.example.AppController.action.Preferences.icon=griffon.swing.support.silkicons.SilkIcon|star
 ----
 
 The JavaFX version for the same icon value is
@@ -35,5 +35,5 @@ The JavaFX version for the same icon value is
 [source,java,options="nowrap"]
 .griffon-app/i18n/messages.properties
 ----
-org.example.AppController.action.Preferences.icon=griffon.javafx.support.silk.SilkIcon|star
+org.example.AppController.action.Preferences.icon=griffon.javafx.support.silkicons.SilkIcon|star
 ----
